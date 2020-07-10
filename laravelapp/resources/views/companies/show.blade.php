@@ -20,6 +20,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="logo">Logo :</label>
+                        <img src="{{asset($url)}}" style="width: 100px; height:100px; margin-right: 10px; margin-left: 10px;">
                         <label>{{$companies->logo}}</label>
                     </div>
                     <div class="form-group col-md-6">

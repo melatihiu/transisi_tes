@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <h3 class='text-center'> {{__('Welcome '. Auth::user()->name)}} </h3>
+                    <h5 class='text-center'> {{ __('You are logged in!') }} </h5>
                 </div>
             </div>
         </div>

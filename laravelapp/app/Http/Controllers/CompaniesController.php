@@ -42,7 +42,7 @@ class CompaniesController extends Controller
     {
         $request->validate([
             'nama' => 'required',
-            'email' => 'required|unique:companies|email',
+            'email' => 'required|email',
             'logo' => 'required|image|mimes:png|max:2048|dimensions:min_width=100,min_height=100',
             'website' => 'required'
         ]);

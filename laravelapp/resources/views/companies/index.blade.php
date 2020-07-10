@@ -20,6 +20,7 @@
                         <thead>
                             <tr>
                                 <td class='text-center'>No</td>
+                                <td class='text-center'>Logo</td>
                                 <td>Nama</td>
                                 <td>Email</td>
                                 <td>Website</td>
@@ -30,6 +31,7 @@
                             @foreach($companies as $company)
                                 <tr>
                                     <td class='text-center'>{{ ++$i }}</td>
+                                    <td class='text-center'><img src="{{asset(Storage::url($company->logo))}}" style="width: 30px; height:30px;"></td>
                                     <td>{{$company->nama}}</td>
                                     <td>{{$company->email}}</td>
                                     <td>{{$company->website}}</td>
